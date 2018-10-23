@@ -1,0 +1,53 @@
+
+
+.BasketTitle{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    max-width: 200px;
+}
+
+.Centr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 14px;
+}
+
+.BasketTitle h3{
+    margin-left: 19px;
+}
+.BasketButton{
+    text-align: center;
+    margin-top: 32px;
+    background: #29d807;
+}
+.BasketButton:hover{
+    background: #00d81d;
+}
+.BasketProd{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    max-width: 200px;
+}
+.BasketImg{
+    margin-right: 8px;
+}
+.BasketText{
+    font-size: 13px;
+    margin-bottom: 0px;
+    min-width: 110px;
+}
+
+.BasketPrice{
+    text-align: right;
+    max-width: 200px;
+    min-width: 70px;
+    font-size: 13px;
+}
+.Basket hr{
+    width: 200px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
