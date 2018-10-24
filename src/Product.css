@@ -1,33 +1,3 @@
-.Prod{
-    display: flex;
-    flex-direction: row;
-}
-
-.Img{
-    width: 140px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-}
-.Text{
-    width: 333px;
-    font-size: 13px;
-    margin-right: 18px;
-}
-
-.Text h3{
-    margin-top: 16px;
-}
-
-.Price{
-    align-self: center;
-    width: 200px;
-}
-
-.Price h2{
-    text-align: center;
-    margin-bottom: 15px;
-    margin-top: 0px;
-}
 button{
     background: #00ade4;
     color: white;
@@ -49,4 +19,40 @@ hr{
     margin-top: 0px;
     margin-bottom: 20px;
 }
+
+.Img{
+    width: 140px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.Price{
+    align-self: center;
+    width: 200px;
+}
+
+.Price h2{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+.Prod{
+    display: flex;
+    flex-direction: row;
+}
+
+.Text{
+    width: 333px;
+    font-size: 13px;
+    margin-right: 18px;
+}
+
+.Text h3{
+    margin-top: 16px;
+}
+
+
+
+
+
 

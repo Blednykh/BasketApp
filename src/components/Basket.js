@@ -10,7 +10,6 @@ class Basket extends Component {
     }
 
 
-
     handleClick() {
         const {selectedProducts} = this.props;
         const {sum} = this.props;
@@ -52,12 +51,5 @@ class Basket extends Component {
 
     }
 }
-
-
-
-
-
-
-
 
 export default Basket;

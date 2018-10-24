@@ -5,37 +5,43 @@ import Product from "./Product";
 import Basket from "./Basket"
 import products from "../data"
 
-
-
-
 class App extends Component {
     constructor(props){
         super(props);
         this.handleScroll = this.handleScroll.bind(this);
+        this.handleResize = this.handleResize.bind(this);
     }
-
 
     state ={
         selectedProducts: [],
         sum: 0,
-        top: '157'
+        top: '157',
+        right: '180'
     }
-
-
 
 
     handleScroll(event) {
         let newTop = this.state.top;
-        if(Number(event.pageY)>=102){
+        if(Number(event.pageY)>102){
             newTop = 56;
-            this.setState({top: newTop});
-
         }
         if(Number(event.pageY)<=102){
             newTop = 157-Number(event.pageY);
-            this.setState({top: newTop});
-
         }
+        this.setState({top: newTop});
+    };
+
+    handleResize(event) {
+        const clientWidth = Number(document.documentElement.clientWidth);
+        let newRight = this.state.right;
+        if(clientWidth>=1349){
+            newRight = 180+(clientWidth-1349)/2;
+        }
+        else{
+            newRight = 180-(1349-clientWidth)/2;
+            if(newRight<0) newRight=0;
+        }
+        this.setState({right: newRight});
     };
 
 
@@ -53,6 +59,7 @@ class App extends Component {
         this.setState({selectedProducts: list, sum: sum});
 
         window.addEventListener('scroll', this.handleScroll);
+        window.addEventListener('resize', this.handleResize);
         
     }
 
@@ -62,9 +69,6 @@ class App extends Component {
         list.push(product);
         sum+=Number(product.price);
         this.setState({selectedProducts: list, sum: sum});
-       /* alert(product.title);*/
-        // localStorage.setItem("arr", );
-
     };
 
     deleteSelectedProducts = (index) => (event) => {
@@ -97,7 +101,7 @@ class App extends Component {
                                                         addSelectedProducts={this.addSelectedProducts}
               />)}
               </div>
-              <div className="Basket" style={{top: this.state.top}}>
+              <div className="Basket" style={{top: this.state.top, right: this.state.right}}>
               <Basket selectedProducts={selectedProducts}
                       sum={sum}
                       deleteSelectedProducts = {this.deleteSelectedProducts}

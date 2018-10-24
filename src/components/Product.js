@@ -4,11 +4,6 @@ import '../Product.css';
 
 class Product extends Component {
 
-    state ={
-        disabled: 'inline'
-    }
-
-
     render() {
         const {product,addSelectedProducts,length,index} = this.props
         const description = <sector>{product.description}</sector>

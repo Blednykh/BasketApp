@@ -1,50 +1,3 @@
-.Products{
-    background-color: burlywood;
-}
-
-
-
-/*.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
-}*/
-
-
-header{
-  background-color: black;
-  min-height: 100px;
-  margin-bottom: 40px;
-}
-.Header{
-  margin-left: auto;
-  margin-right: auto;
-  width: 1000px;
-}
-header img{
-  margin-top: 23px;
-  margin-left: 10px;
-}
-
-img{
-  vertical-align: center;
-}
-.footer{
-  background-color: #10546b ;
-  min-height: 150px
-}
-.Body{
-  display: flex;
-  flex-direction: row;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1000px;
-  /*width: 762px;*/
-}
 .Basket{
     position: fixed;
     right: 180px;
@@ -53,6 +6,47 @@ img{
     border-width: 1px;
     border-color: #d4d4d4;
     width: 227px;
+    background-color: white;
+    opacity: 0.95;
 }
+
+.Body{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+img{
+    vertical-align: center;
+}
+
+.footer{
+    background-color: #10546b ;
+    min-height: 150px;
+}
+
+.Header{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+header{
+    background-color: black;
+    min-height: 100px;
+    max-width: border-box;
+    margin-bottom: 40px;
+}
+
+header img{
+    margin-top: 23px;
+    margin-left: 10px;
+}
+
+
+
+
 
 
